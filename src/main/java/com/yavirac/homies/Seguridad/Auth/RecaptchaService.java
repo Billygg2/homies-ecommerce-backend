@@ -11,7 +11,7 @@ import org.springframework.http.HttpMethod;
 @RequiredArgsConstructor
 public class RecaptchaService {
     private static final String RECAPTCHA_VERIFY_URL = "https://www.google.com/recaptcha/api/siteverify";
-    private static final String SECRET_KEY = "6Le4eKcqAAAAAM9SLfkzztxNO8TZUT3vEqhViOHt";
+    private static final String SECRET_KEY = "quite la key por seguridad";
 
     private RestTemplate restTemplate;
     
