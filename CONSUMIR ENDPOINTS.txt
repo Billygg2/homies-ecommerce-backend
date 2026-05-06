@@ -1,0 +1,80 @@
+CONSUMIR ENDPOINTS
+SWAGGER:
+http://localhost:8080/swagger-ui/index.html
+
+------------------------------------------------------------------
+Producto:
+GET/POST
+http://localhost:8080/tenis
+
+GETBYID/PATCH/DELETE
+http://localhost:8080/productos
+{
+   "nombre_producto": "Nike Air One Retro",
+   "descripcion": "Zapatos comodos de color rojo, negro y blanco",
+   "precio_venta": 255.60,
+   "cantidad_producto": 2,
+   "talla": 22,
+   "img_producto": "|",
+   "catalogo":{
+     "id_catalogo": 1
+   }
+}
+
+Catalogo
+http://localhost:8080/catalogo
+
+{
+   "nombreCatalogo": "gorras"
+}
+
+-------------------------------------------------------------------
+ROL:
+GET/POST
+http://localhost:8080/roles
+GETBYID/PATCH/DELETE
+http://localhost:8080/roles/3
+{
+  "name":"ADMIN"
+}
+{
+  "name":"USER"
+}
+-------------------------------------------------------------------
+USER AND ADMIN:
+register user
+http://localhost:8080/auth/register
+register admin
+http://localhost:8080/auth/registerAdmin
+{
+  "username": "HomieStaff",
+  "password": "2004ESte29",
+  "nombres": "Esteban Alejandro Gualinga Tirira",
+  "telefono": "0983545114",
+  "fechaNacimiento": "2004-03-29",
+  "fechaRegistro": "2024-11-18"
+}
+
+--------------------------------------------------------------------
+PEDIDO:
+GET/POST
+http://localhost:8080/pedido
+PATCH/GETBYID/DELETE
+http://localhost:8080/pedido/1
+{
+  "talla_tenis": 40,
+  "cantidad": 1,
+  "pedido_fecha": "2024-06-10T15:30:00Z",
+  "total_pagar": 255.60,
+  "estado": true,
+  "direccion": "Santa Isabel, Valle",
+  "usuario": {
+    "id": 2
+  },
+  "tenis": [
+    {
+      "id_tenis": 1
+    }
+  ]
+}
+
