@@ -1,22 +1,64 @@
-# Ecommerce Homies - Backend
+# 🛍️ Ecommerce Homies (Fullstack)
 
-API REST para una plataforma de comercio electrónico desarrollada como proyecto de titulación.
+Plataforma de comercio electrónico desarrollada como proyecto de titulación (2024–2025), enfocada en la gestión completa de una tienda de ropa mediante una arquitectura fullstack.
 
-## Descripción
-Este backend permite la gestión de usuarios, productos y pedidos, exponiendo endpoints REST que son consumidos por un frontend en Angular.
+---
 
-## Tecnologías
+## 📌 Descripción
+
+Sistema web que permite a los usuarios explorar productos, gestionar un carrito de compras y realizar pedidos. Incluye un panel de administración para la gestión de usuarios y productos.
+
+La aplicación está construida bajo una arquitectura cliente-servidor, donde el frontend consume una API REST desarrollada en backend.
+
+---
+
+## 🚀 Tecnologías
+
+### Backend
 - Java
 - Spring Boot
 - Gradle
-- REST API
+- PostgreSQL
+- API REST
 
-## Funcionalidades
-- Registro e inicio de sesión
-- Gestión de productos
+### Frontend
+- Angular 16
+- TypeScript
+- HTML / CSS
+
+---
+
+## ⚙️ Funcionalidades principales
+
+- Registro e inicio de sesión de usuarios
+- Autenticación y autorización por roles
+- Catálogo de productos
 - Carrito de compras
-- Procesamiento de pedidos
+- Gestión de pedidos
+- Administración de productos y usuarios
 
-## Arquitectura
-Aplicación backend estructurada en capas (controlador, servicio, repositorio), siguiendo buenas prácticas de desarrollo.
+---
 
+## 🧠 Arquitectura
+
+Aplicación fullstack basada en separación de responsabilidades:
+
+- **Frontend (SPA)** desarrollado en Angular
+- **Backend REST** con Spring Boot
+- Comunicación mediante HTTP/JSON
+- Persistencia de datos con PostgreSQL
+
+---
+
+## 🔗 Repositorios
+
+- 🔙 Backend: *(pon aquí tu link)*
+- 🎨 Frontend: *(pon aquí tu link)*
+
+---
+
+## ▶️ Ejecución del proyecto
+
+### Backend
+```bash
+./gradlew bootRun
